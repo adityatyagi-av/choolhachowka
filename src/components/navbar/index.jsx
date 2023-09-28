@@ -21,19 +21,19 @@ export default function App() {
   ];
 
   return (
-    <Navbar onMenuOpenChange={setIsMenuOpen}>
+    <Navbar onMenuOpenChange={setIsMenuOpen} className="shadow-md pb-1.5">
       <NavbarContent className="flex ">
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           className="sm:hidden"
         />
-        <NavbarBrand>
-          <Image src="/choolhachowka.png" width={150} height={90} alt="image"/>
+        <NavbarBrand className="mb-1.5">
+          <Image src="/choolhachowka.png" width={130} height={90} alt="image"/>
           
         </NavbarBrand>
       </NavbarContent>
 
-      <NavbarContent className="hidden sm:flex mt-3 gap-9" justify="center">
+      <NavbarContent className="hidden sm:flex mt-3 gap-9 mb-2" justify="center">
         <NavbarItem>
           <Link color="foreground" href="#">
             About
@@ -45,13 +45,13 @@ export default function App() {
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#">
+          <Link color="foreground"  href="#">
             Contact Us
           </Link>
         </NavbarItem>
       </NavbarContent>
       <NavbarContent justify="end">
-        <NavbarItem className="hidden lg:flex">
+        <NavbarItem className="hidden h-[18px] lg:flex">
           <Link href="#">Login</Link>
         </NavbarItem>
         <NavbarItem>
