@@ -15,13 +15,40 @@ export default function App() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   const menuItems = [
-    "Services",
-    "About",
-    "Contact Us"
+    {
+      "id":1,
+      "link":"/services",
+      "name":"Services"
+    },
+    {
+      "id":2,
+      "link":"/about",
+      "name":"About"
+    },
+    {
+      "id":3,
+      "link":"/contact",
+      "name":"Contact Us"
+    },
+    {
+      "id":4,
+      "link":"/login",
+      "name":"Login"
+    },
+    {
+      "id":5,
+      "link":"/register",
+      "name":"Register"
+    },
+
   ];
 
   return (
-    <Navbar onMenuOpenChange={setIsMenuOpen} className="shadow-md pb-1.5">
+    <Navbar 
+    maxWidth="xl"
+    onMenuOpenChange={setIsMenuOpen} 
+    className="shadow-md pb-1.5"
+    >
       <NavbarContent className="flex ">
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
@@ -35,43 +62,43 @@ export default function App() {
 
       <NavbarContent className="hidden sm:flex mt-3 gap-9 mb-2" justify="center">
         <NavbarItem>
-          <Link color="foreground" href="#">
+          <Link color="foreground" href="/about">
             About
           </Link>
         </NavbarItem>
         <NavbarItem isActive>
-          <Link href="#" aria-current="page">
+          <Link href="/services" aria-current="page">
             Services
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground"  href="#">
+          <Link color="foreground"  href="/contact">
             Contact Us
           </Link>
         </NavbarItem>
       </NavbarContent>
       <NavbarContent justify="end">
         <NavbarItem className="hidden h-[18px] lg:flex">
-          <Link href="#">Login</Link>
+          <Link href="/login">Login</Link>
         </NavbarItem>
         <NavbarItem>
-          <Button as={Link} color="primary" href="#" variant="flat">
+          <Button as={Link} color="primary" href="/register" variant="flat">
             Register
           </Button>
         </NavbarItem>
       </NavbarContent>
       <NavbarMenu>
         {menuItems.map((item, index) => (
-          <NavbarMenuItem key={`${item}-${index}`}>
+          <NavbarMenuItem key={item.id}>
             <Link
               color={
                 index === 2 ? "primary" : index === menuItems.length - 1 ? "danger" : "foreground"
               }
               className="w-full"
-              href="#"
+              href={item.link}
               size="lg"
             >
-              {item}
+              {item.name}
             </Link>
           </NavbarMenuItem>
         ))}
