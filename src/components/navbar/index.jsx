@@ -7,23 +7,30 @@ import { Navbar,
   NavbarItem, 
   NavbarMenuToggle,
   NavbarMenu,
-  NavbarMenuItem, Link, Button} from "@nextui-org/react";
+  NavbarMenuItem, Button} from "@nextui-org/react";
 
 import Image from "next/image.js";
+import Link from "next/link";
 
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   const menuItems = [
+    
     {
       "id":1,
-      "link":"/services",
-      "name":"Services"
+      "link":"/",
+      "name":"Home"
     },
     {
       "id":2,
       "link":"/about",
       "name":"About"
+    },
+    {
+      "id":4,
+      "link":"/services",
+      "name":"Services"
     },
     {
       "id":3,
@@ -49,6 +56,7 @@ export default function App() {
     onMenuOpenChange={setIsMenuOpen} 
     className="shadow-md pb-1.5"
     >
+    
       <NavbarContent className="flex ">
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
@@ -59,14 +67,22 @@ export default function App() {
           
         </NavbarBrand>
       </NavbarContent>
+    
 
       <NavbarContent className="hidden sm:flex mt-3 gap-9 mb-2" justify="center">
+        
+      <NavbarItem>
+          <Link color="foreground" href="/">
+            Home
+          </Link>
+        </NavbarItem>
+
         <NavbarItem>
           <Link color="foreground" href="/about">
             About
           </Link>
         </NavbarItem>
-        <NavbarItem isActive>
+        <NavbarItem isActive className="text-yellow-800">
           <Link href="/services" aria-current="page">
             Services
           </Link>
@@ -82,7 +98,7 @@ export default function App() {
           <Link href="/login">Login</Link>
         </NavbarItem>
         <NavbarItem>
-          <Button as={Link} color="primary" href="/register" variant="flat">
+          <Button as={Link} color="warning" href="/register" variant="flat">
             Register
           </Button>
         </NavbarItem>

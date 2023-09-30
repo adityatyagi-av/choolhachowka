@@ -1,3 +1,4 @@
+
 import React from 'react'
 
 const page = () => {
@@ -13,7 +14,7 @@ const page = () => {
             <p className="mt-3 text-gray-500 ">Contact to our friendly team.</p>
         </div>
 
-        <img className="object-cover w-full h-64 mt-10 rounded-lg lg:h-96" src="mainimages/mess.jpg" alt=""/>
+        <img className="object-cover w-full h-64 mt-10 rounded-lg lg:h-96" src="/mainimages/mess.jpg" alt="contact choolha chowka image" priority/>
         
         <div className="grid grid-cols-1 gap-12 mt-10 lg:grid-cols-3 sm:grid-cols-2 ">
             <div className="p-4 rounded-lg bg-yellow-50 md:p-6 ">
