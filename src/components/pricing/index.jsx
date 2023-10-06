@@ -36,7 +36,8 @@ const Pricing = () => {
                                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum quam voluptatibus
                             </p>
 
-                            <h2 className="mt-4 text-2xl font-semibold text-gray-700 sm:text-3xl ">₹3800 <span className="text-base font-medium">/Month</span></h2>
+                            <h2 className="mt-4 text-2xl font-semibold text-gray-700 sm:text-3xl ">₹3800 </h2>
+                            <span className="text-base ml-2 text-sm text-gray-500 font-medium">per Month</span>
 
                             <p className="mt-1 text-gray-500 ">
                                 
@@ -112,8 +113,8 @@ const Pricing = () => {
                                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum quam voluptatibus
                             </p>
 
-                            <h2 className="mt-4 text-2xl font-semibold text-gray-700 sm:text-3xl ">₹4000 <span className="text-base font-medium">/month</span></h2>
-
+                            <h2 className="mt-4 text-2xl font-semibold text-gray-700 sm:text-3xl ">₹4000 </h2>
+                            <span className="text-base ml-2 text-sm text-gray-500 font-medium">per Month</span>
                             <p className="mt-1 text-gray-500 ">
                                 
                             </p>
