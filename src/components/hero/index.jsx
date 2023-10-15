@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 const Hero = () => {
@@ -22,23 +23,23 @@ const Hero = () => {
 <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
     
     
-        <img className="h-auto max-w-full rounded-sm" src="/mainimages/mess2.jpg" alt=""/>
+        <Image width={300} height={300} className="h-auto max-w-full rounded-sm" src="/mainimages/mess2.jpg" alt=""/>
     
-        <img className="h-auto max-w-full rounded-sm" src="/mainimages/mess3.jpg" alt=""/>
+        <Image width={300} height={300} className="h-auto max-w-full rounded-sm" src="/mainimages/mess3.jpg" alt=""/>
     
-        <img className="h-auto max-w-full rounded-sm" src="/mainimages/mess.jpg" alt=""/>
+        <Image width={300} height={300} className="h-auto max-w-full rounded-sm" src="/mainimages/mess.jpg" alt=""/>
     
-        <img className="h-auto max-w-full rounded-sm" src="/mainimages/mess2.jpg" alt=""/>
+        <Image width={300} height={300} className="h-auto max-w-full rounded-sm" src="/mainimages/mess2.jpg" alt=""/>
     
-        <img className="h-auto max-w-full rounded-sm" src="/mainimages/mess3.jpg" alt=""/>
+        <Image width={300} height={300} className="h-auto max-w-full rounded-sm" src="/mainimages/mess3.jpg" alt=""/>
     
-        <img className="h-auto max-w-full rounded-sm opacity-50" src="/mainimages/mess.jpg" alt=""/>
+        <Image width={300} height={300} className="h-auto max-w-full rounded-sm opacity-50" src="/mainimages/mess.jpg" alt=""/>
     
-        <img className="h-auto max-w-full rounded-sm" src="/mainimages/mess.jpg" alt=""/>
+        <Image width={300} height={300} className="h-auto max-w-full rounded-sm" src="/mainimages/mess.jpg" alt=""/>
     
-        <img className="h-auto max-w-full rounded-sm" src="/mainimages/mess2.jpg" alt=""/>
+        <Image width={300} height={300} className="h-auto max-w-full rounded-sm" src="/mainimages/mess2.jpg" alt=""/>
     
-        <img className="h-auto max-w-full hidden md:block rounded-sm" src="/mainimages/mess3.jpg" alt=""/>
+        <Image width={300} height={300} className="h-auto max-w-full hidden md:block rounded-sm" src="/mainimages/mess3.jpg" alt=""/>
     
     
 </div>
