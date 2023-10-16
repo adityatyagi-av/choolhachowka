@@ -3,7 +3,7 @@ import React from 'react';
 
 const Team = () => {
   return (
-    <div className="container mx-auto  h-screen  mt-6 mb-3">
+    <div className="container mx-auto  h-full  mt-6 mb-3">
       <div className="text-center mb-8">
         <p> Hello Everyone!! A very Warm Welcome to CHOOLA-CHOWKA🙌 </p>
 
