@@ -242,17 +242,6 @@
 
 
 
-import React from 'react'
-
-export default function moreaboutus() {
-  return (
-    <div>  </div>
-  )
-}
-
-
-
-
 
 
 
